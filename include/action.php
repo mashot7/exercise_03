@@ -30,7 +30,7 @@ if (isset($_FILES['file'])) {
 	require_once('filesystem.php');
 	$sort['name'] = 'name';
 	$sort['flag'] = 4;
-	$files = new Filesystem('../' .$dir_path, 'http://localhost/courses/jsonmysqlphp/filesystem/php_pagination/include/action.php', $sort);
+	$files = new Filesystem('../' .$dir_path, './include/action.php', $sort);
 	$arraySearch = $files->getDirectoryArray()[1];
 
 	if (!file_exists($_FILES['file']['tmp_name']) || !is_uploaded_file($_FILES['file']['tmp_name'])) {

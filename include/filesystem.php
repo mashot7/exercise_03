@@ -107,13 +107,7 @@ class Filesystem
 						case 'folder':
 							$directoryArray[$j]['icon'] = 'folder_open';
 							break;
-						case 'png':
-							$directoryArray[$j]['icon'] = 'photo';
-							break;
-						case 'gif':
-							$directoryArray[$j]['icon'] = 'photo';
-							break;
-						case 'jpg':
+						case 'png' || 'gif' || 'jpg':
 							$directoryArray[$j]['icon'] = 'photo';
 							break;
 						case 'mp4':
@@ -125,10 +119,6 @@ class Filesystem
 						case 'mp3':
 							$directoryArray[$j]['icon'] = 'music_note';
 							break;
-						case 'txt':
-							$directoryArray[$j]['icon'] = 'description';
-							break;
-
 						default:
 							$directoryArray[$j]['icon'] = 'description';
 							break;

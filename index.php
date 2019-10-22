@@ -18,7 +18,7 @@ if (isset($_GET['sort_flag'])) {
 require_once('include/filesystem.php');
 require_once('include/pagination.php');
 
-$data['pagination_url'] = 'http://localhost/courses/jsonmysqlphp/filesystem/php_pagination/index.php';
+$data['pagination_url'] = './index.php';
 $files = new Filesystem($dir_path, $data['pagination_url'], $sort);
 $directoryArray = $files->getDirectoryArray()[0];
 $arraySearch = $files->getDirectoryArray()[1];
