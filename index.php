@@ -1,4 +1,7 @@
 <?php
+if (!file_exists('./directory')) {
+	mkdir('./directory', 0777, true);
+}
 if (isset($_GET['dir_path'])) {
 	$dir_path = $_GET['dir_path'];
 } else {
